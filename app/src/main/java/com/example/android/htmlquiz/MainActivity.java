@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Pull answers from xml based on ID and assign boolean variable for scoring.
+
     public void submitQuiz (View view) {
         RadioButton oneA = findViewById(R.id.oneA);
         boolean answerOne = oneA.isChecked();
@@ -30,10 +32,14 @@ public class MainActivity extends AppCompatActivity {
         boolean answerFour = fourA.isChecked();
         CheckBox fiveA = findViewById(R.id.fiveA);
         boolean answerFiveA = fiveA.isChecked();
+        CheckBox fiveB = findViewById(R.id.fiveB);
+        boolean answerFiveB = fiveB.isChecked();
+        CheckBox fiveC = findViewById(R.id.fiveC);
+        boolean answerFiveC = fiveC.isChecked();
         CheckBox fiveD = findViewById(R.id.fiveD);
         boolean answerFiveD = fiveD.isChecked();
 
-        int score = calculateScore(answerOne, answerTwo, answerThree, answerFour,answerFiveA, answerFiveD);
+        int score = calculateScore(answerOne, answerTwo, answerThree, answerFour,answerFiveA, answerFiveB, answerFiveC, answerFiveD);
         // Show score as a toast
 
         if (score == 0)
@@ -45,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private int calculateScore(boolean answerOne, boolean answerTwo, boolean answerThree, boolean answerFour, boolean answerFiveA, boolean answerFiveD){
+
+
+    //calculate the score based on user answers
+    private int calculateScore(boolean answerOne, boolean answerTwo, boolean answerThree, boolean answerFour, boolean answerFiveA, boolean answerFiveB, boolean answerFiveC, boolean answerFiveD){
         int totalScore = 0;
 
         if (answerOne){
@@ -68,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        if (answerFiveA && answerFiveD){
+        //If both A and D are checked, but not B and C.
+        if (answerFiveA && answerFiveD && !answerFiveB && !answerFiveC) {
             totalScore = totalScore + 1;
 
         }
