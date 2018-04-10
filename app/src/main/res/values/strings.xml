@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HTMLQuiz</string>
+
+    <!-- String Quiz Title -->
+    <string name="title">HTML Starter Quiz</string>
+
+    <!-- Strings for Question 1 -->
+    <string name="qone"> What does HTML stand for?</string>
+    <string name="oneA">A. Hyper Text Markup Language </string>
+    <string name="oneB">B. Hyper Text Markup Links </string>
+    <string name="oneC">C. Hybrid Text Math Language</string>
+
+    <!-- Strings for Question 2 -->
+    <string name="qtwo"> Who creates the Web standards?</string>
+    <string name="twoA">A. Firefox </string>
+    <string name="twoB">B. Google </string>
+    <string name="twoC">C. W3School </string>
+    <string name="twoD">D. The World Wide Web Consortium </string>
+
+        <!-- Strings for Question 3 -->
+    <string name="qthree"> What is the HTML element for the largest heading?</string>
+    <string name="threeA">\u003ch1\u003e</string>
+
+    <!-- Strings for Question 4 -->
+    <string name="qfour"> What is the HTML element for inserting a link break?</string>
+    <string name="fourA"> \u003cbr\u003e </string>
+    <string name="fourB"> BR </string>
+    <string name="fourC"> \u003cLineBreak\u003e </string>
+
+        <!-- Strings for Question 5 -->
+    <string name="qfive"> Select the correct HTML for adding a background color.</string>
+    <string name="fiveA"> \u003cbody style=\u0022background-color:yellow\u003B\u0022\u003e</string>
+    <string name="fiveB"> background-color=purple; </string>
+    <string name="fiveC"> \u003cbody style="background-color:blue;\u003e </string>
+    <string name="fiveD">\u003cbody style=\u0022background-color:powderblue\u003B\u0022\u003e </string>
+
+    <!-- Strings for Scores -->
+    <string name="tryAgain"> Your score is:\u0020 . Please try again!</string>
+    <string name="wellDone"> Your score is:\u0220 . Well Done! </string>
+
+    <string name="submitButton">SUBMIT</string>
+
+    <string name="answer"> Enter Answer Here</string>
+
+</resources>
