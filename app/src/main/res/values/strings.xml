@@ -42,4 +42,6 @@
 
     <string name="answer"> Enter Answer Here</string>
 
+    <string name="bgdes">Blue Background</string>
+
 </resources>

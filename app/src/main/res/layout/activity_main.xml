@@ -1,38 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context="com.example.android.htmlquiz.MainActivity"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    android:layout_height="match_parent"
+    tools:context="com.example.android.htmlquiz.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:orientation="vertical">
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fadingEdge="horizontal"
             android:text="@string/title"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccentTwo"
             android:textSize="@dimen/sp30"
             android:textStyle="bold"
             tools:layout_margin="@dimen/dp16" />
 
         <TextView
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp8"
-            android:text="@string/qone"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp16" />
+            android:text="@string/qone" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -40,38 +32,33 @@
 
             <RadioButton
                 android:id="@+id/oneA"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/oneA"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/oneA" />
 
             <RadioButton
                 android:id="@+id/oneB"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/oneB"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/oneB" />
 
             <RadioButton
                 android:id="@+id/oneC"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/oneC"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/oneC" />
 
         </RadioGroup>
 
 
         <TextView
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp8"
-            android:text="@string/qtwo"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp16" />
+            android:text="@string/qtwo" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -79,63 +66,54 @@
 
             <RadioButton
                 android:id="@+id/twoA"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/twoA"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/twoA" />
 
             <RadioButton
                 android:id="@+id/twoB"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/twoB"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/twoB" />
 
             <RadioButton
                 android:id="@+id/twoC"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/twoC"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/twoC" />
 
             <RadioButton
                 android:id="@+id/twoD"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/twoD"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/twoD" />
 
         </RadioGroup>
 
 
         <TextView
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/qthree"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/qthree" />
 
         <EditText
             android:id="@+id/userThree"
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/answer"
-            android:textColor="@color/black"
-            android:layout_margin="@dimen/dp8"/>
+            android:hint="@string/answer" />
 
 
         <TextView
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp8"
-            android:text="@string/qfour"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp16" />
+            android:text="@string/qfour" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -143,81 +121,73 @@
 
             <RadioButton
                 android:id="@+id/fourA"
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fourA"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/fourA" />
 
             <RadioButton
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fourB"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/fourB" />
 
             <RadioButton
+                style="@style/RegularStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fourC"
-                android:textSize="@dimen/sp16"
-                android:layout_margin="@dimen/dp8"/>
+                android:text="@string/fourC" />
 
         </RadioGroup>
 
         <TextView
+            style="@style/RegularStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/qfive"
-            android:textColor="@color/black"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/qfive" />
 
         <CheckBox
             android:id="@+id/fiveA"
+            style="@style/RegularStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fiveA"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/fiveA" />
 
         <CheckBox
             android:id="@+id/fiveB"
+            style="@style/RegularStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fiveB"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/fiveB" />
 
         <CheckBox
             android:id="@+id/fiveC"
+            style="@style/RegularStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fiveC"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/fiveC" />
 
         <CheckBox
             android:id="@+id/fiveD"
+            style="@style/RegularStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fiveD"
-            android:textSize="@dimen/sp16"
-            android:layout_margin="@dimen/dp8"/>
+            android:text="@string/fiveD" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:onClick="submitQuiz"
-            android:text="@string/submitButton"
-            android:textSize="@dimen/sp16"
+            android:layout_margin="@dimen/dp16"
             android:background="@color/colorPrimaryDark"
-            android:textColor="@color/colorAccentTwo"
-            android:textStyle="bold"
-            android:layout_margin="@dimen/sp16"
+            android:onClick="submitQuiz"
             android:padding="@dimen/dp16"
-            android:elevation="@dimen/dp32"/>
+            android:text="@string/submitButton"
+            android:textColor="@color/colorAccentTwo"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
+
 </ScrollView>
